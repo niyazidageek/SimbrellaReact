@@ -1,3 +1,7 @@
+.news-section{
+    animation: news 1s linear;
+    animation-play-state: paused;
+}
 .news-section h2{
     color: darkblue;
     display: inline-block;
@@ -41,4 +45,14 @@
 .news-section .col-3.cards span{
     position: absolute;
     bottom: 0;
+}
+@keyframes news {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
