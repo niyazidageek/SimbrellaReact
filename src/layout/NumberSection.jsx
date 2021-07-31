@@ -62,17 +62,17 @@ const NumberSection = () => {
                     </div>
                     <div className="col-12 d-flex justify-content-between bottom">
                         <div className="number col-2">
-                        <CountUp end={220} duration={2} style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
+                        <CountUp end={220}  style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
                         <h2>Million</h2>
                         <p>END USERS SERVED GLOBALLY</p>
                         </div>
                         <div className="number col-2">
-                        <CountUp end={20} duration={2} style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
+                        <CountUp end={20}  style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
                         <h2>Years</h2>
                         <p>OF PROFESSIONAL EXPERIENCE</p>
                         </div>
                         <div className="number col-2">
-                        <CountUp end={3.3} duration={2} style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
+                        <CountUp end={3.3}  style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
                         <h2>Billion$</h2>
                         <p>WORTH OF TOTAL LOANS DISBURSED TO DATE</p>
                         </div>
@@ -80,17 +80,17 @@ const NumberSection = () => {
                     </div>
                     <div className="col-12 d-flex justify-content-between">
                     <div className="number col-2">
-                        <CountUp end={30} duration={2} style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
+                        <CountUp end={30} style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
                         <h2>Million</h2>
                         <p>TRANSACTIONS PER DAY</p>
                     </div>
                     <div className="number col-2">
-                        <CountUp end={25} duration={2} style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
+                        <CountUp end={25} style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
                         <h2>Countries</h2>
                         <p>OUR GLOBAL PRESENCE</p>
                         </div>
                         <div className="number col-2">
-                        <CountUp end={11} duration={2} style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
+                        <CountUp end={11} style={{color:'orange', fontSize:'xx-large', fontWeight:'bold'}}/>
                         <h2>Billion</h2>
                         <p>TOTAL LOANS PROVIDED TO DATE</p>
                         </div>

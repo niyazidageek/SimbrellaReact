@@ -1,0 +1,44 @@
+.news-section h2{
+    color: darkblue;
+    display: inline-block;
+}
+.news-section .btn:hover img{
+    transform: translatex(20%);
+}
+.news-section .btn{
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 8px;
+    border: 3px solid rgb(235, 233, 233) ;
+}
+.news-section .btn:hover{
+    border: 3px solid orange;
+}
+.news-section .btn img{
+    transition: all 150ms linear;
+}
+.news-section .image-container img{
+    width: 100%;
+    overflow: hidden;
+    object-fit: fill;
+    transition: all 150ms linear;
+}
+.news-section .image-container img:hover{
+    transform: scale(1.1);
+}
+.news-section .image-container{
+    border-radius: 16px;
+    overflow: hidden;
+}
+.news-section h3{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    margin-bottom:3rem;
+}
+.news-section .col-3.cards {
+    position: relative;
+}
+.news-section .col-3.cards span{
+    position: absolute;
+    bottom: 0;
+}

@@ -7,6 +7,8 @@ import NumberSection from "./layout/NumberSection";
 import MapSection from "./layout/MapSection";
 import ClientsSection from "./layout/ClientsSection";
 import ExecutiveSection from "./layout/ExecutiveSection";
+import JobsSection from "./layout/JobsSection";
+import NewsSection from "./layout/NewsSection";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
     <MapSection />
     <ClientsSection />
     <ExecutiveSection />
+    <JobsSection />
+    <NewsSection />
       <Switch>
         
       </Switch>

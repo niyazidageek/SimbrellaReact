@@ -19,10 +19,10 @@ const data = [
     }
 ]
 
-const Button = () => {
+export const Button = ({content}) => {
     return (
         <button className='btn btn-light d-flex justify-content-around align-items-center'>
-            <span style={{ paddingRight: '3rem' }}>Read more</span>
+            <span style={{ paddingRight: '3rem' }}>{content}</span>
             <img src="https://www.simbrella.com/site/templates/img/link_orange_icon.svg" alt="" />
         </button>
     )
@@ -69,7 +69,7 @@ const SectionCard = () => {
             <div className='container card-container' id="whatwedo" style={{ animationPlayState: 'running' }}>
                 <header>
                     <h2>What we do</h2>
-                    <Button />
+                    <Button content='Read more'/>
                 </header>
                 <Cards />
             </div>
@@ -80,7 +80,7 @@ const SectionCard = () => {
             <div className='container card-container' id="whatwedo" style={{ animationPlayState: 'paused' }}>
                 <header>
                     <h2>What we do</h2>
-                    <Button />
+                    <Button content='Read more'/>
                 </header>
                 <Cards />
             </div>
@@ -90,7 +90,7 @@ const SectionCard = () => {
         return <div className='container card-container' id="whatwedo" style={{ visibility: 'hidden' }}>
         <header>
             <h2>What we do</h2>
-            <Button />
+            <Button content='Read more'/>
         </header>
         <Cards />
     </div>
