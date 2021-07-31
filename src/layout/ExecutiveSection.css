@@ -1,0 +1,21 @@
+.executive-section h2{
+    color: darkblue;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.executive-section .img-container{
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+    display: inline-block;
+    background-image: url(https://www.simbrella.com/site/templates/img/figure_green_bg.png);
+    border-radius: 4px;
+}
+
+.executive-section .box p{
+    font-size: small;
+}
+.executive-section .box h4{
+    margin-top: 1rem;
+    font-size:1rem;
+}

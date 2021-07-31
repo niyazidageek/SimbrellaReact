@@ -1,0 +1,43 @@
+.card-container header{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.card-container header .btn{
+    border-radius: 8px;
+    border: 3px solid rgb(235, 233, 233) ;
+}
+.card-container header .btn:hover{
+    border: 3px solid orange ;
+}
+.card-container header h2{
+    color: darkblue;
+}
+.card-container header img{
+    transition: all 150ms linear;
+}
+.card-container header .btn:hover img{
+    transform: translatex(20%);
+}
+
+#whatwedo{
+    animation: cards 1s linear;
+    animation-play-state: paused;
+}
+@keyframes cards {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.card-container .card:hover{
+    transform: scale(1.05);
+}
+
+.card-container .card{
+    transition: all 150ms linear;
+}

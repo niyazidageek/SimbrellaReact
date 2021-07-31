@@ -1,0 +1,75 @@
+.mapsection{
+    position: relative;
+    animation: mapAnim 1s linear;
+    animation-play-state: paused;
+}
+.mapsection h2{
+    color: darkblue;
+    position: absolute;
+    top: 5%;
+}
+
+.mapsection .orange .box{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: calc(23% - 10px);
+    opacity: 0.3;
+    background-color: orange;
+    margin-left: 0.5rem;
+}
+.mapsection .orange{
+    padding-top: 1rem;
+}
+.mapsection .blue .box{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: calc(52% - 10px);
+    opacity: 0.3;
+    background-color: darkblue;
+    margin-left: 0.5rem;
+}
+.mapsection .both{
+    padding-bottom: 1rem;
+}
+.mapsection .both .box {
+display: inline-block;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+position: absolute;
+left: 0;
+top: calc(80% - 10px);
+opacity: 0.3;
+background-color: darkgoldenrod;
+margin-left: 0.5rem;
+}
+.operations p{
+    padding: 0.4rem;
+    margin: 0;
+}
+.operations{
+    position: absolute;
+    bottom: 5%;
+    border: 1px solid gainsboro;
+}
+.operations span{
+    padding-left: 2rem;
+}
+@keyframes mapAnim {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

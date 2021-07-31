@@ -1,0 +1,98 @@
+.citysection .col-6 h1{
+  width: 50% !important;
+  display: inline-block;
+  margin: 0;
+  color: white;
+  animation: h1Anim 1s linear;
+  animation-play-state: paused;
+  
+}
+.citysection .col-6{
+    align-items: center;
+    position: relative;
+}
+.citysection .row {
+    width: 100%;
+}
+.citysection .blur-bg{
+    animation: blurAnim 1.5s linear;
+    animation-play-state: paused;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    right: 0;
+    background-color: rgba(45, 49, 146, 0.6);
+}
+.citysection .right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.citysection .right ul h5{
+    margin: 2rem;
+    margin-left: 0;
+    font-size: smaller;
+    color: white;
+}
+.citysection .right ul li{
+    border-bottom: 1px solid gray;
+}
+.citysection{
+    background-image: url(https://www.simbrella.com/site/assets/files/1049/solutions_bg-1.jpg);
+    animation: city 1s linear;
+    animation-play-state: paused;
+}
+@keyframes h1Anim {
+    from{
+        transform: translatex(-100%);
+    }
+    to{
+        transform: translatex(0%);
+    }
+}
+@keyframes city {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@keyframes blurAnim {
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
+@keyframes liAnim {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+} 
+.citysection .right ul li:nth-child(1) h5{
+    animation: liAnim 250ms linear;
+    animation-play-state: paused;
+}
+.citysection .right ul li:nth-child(2) h5{
+    animation: liAnim 1000ms linear;
+    animation-play-state: paused;
+}
+.citysection .right ul li:nth-child(3) h5{
+    animation: liAnim 1750ms linear;
+    animation-play-state: paused;
+}
+.citysection .right ul li:nth-child(4) h5{
+    animation: liAnim 2500ms linear;
+    animation-play-state: paused;
+}
+.citysection .right ul li:nth-child(5) h5{
+    animation: liAnim 3250ms linear;
+    animation-play-state: paused;
+}
