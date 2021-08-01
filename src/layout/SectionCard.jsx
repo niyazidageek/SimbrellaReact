@@ -59,7 +59,10 @@ const SectionCard = () => {
             })
     },[])
     if (y >= 110) {
-        
+        var nav1 = document.getElementById("1")
+        var nav2 = document.getElementById("2")
+        nav1.style.color = 'orange'
+        nav2.style.color = 'unset'
         return (
             <div className='container card-container' id="whatwedo" style={{ animationPlayState: 'running' }}>
                 <header>

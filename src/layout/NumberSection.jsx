@@ -10,6 +10,12 @@ const NumberSection = () => {
             })
     },[])
     if(y>=1000){
+        var nav1 = document.getElementById("1")
+        var nav2 = document.getElementById("2")
+        var nav3 = document.getElementById("3")
+        nav3.style.color = 'unset'
+        nav2.style.color = 'orange'
+        nav1.style.color = 'unset'
         return (
             <div className="container numbers pt-5 pb-5" id="whoweare"  style={{animationPlayState:'running'}}>
                 <div className="row">

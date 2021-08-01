@@ -35,6 +35,12 @@ const NewsSection = () => {
             })
     },[])
     if(y>=5340){
+        var nav3 = document.getElementById("3")
+        var nav4 = document.getElementById("4")
+        var nav5 = document.getElementById("5")
+        nav3.style.color = 'unset'
+        nav4.style.color = 'orange'
+        nav5.style.color = 'unset'
         return (
             <div id="news" className="news-section container pt-5 pb-5" style={{animationPlayState:'running'}}>
                 <div className="row w-100 justify-content-between">

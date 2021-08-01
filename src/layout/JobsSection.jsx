@@ -10,6 +10,13 @@ const JobsSection = () => {
             })
     },[])
     if(y>4380){
+        var nav1 = document.getElementById("1")
+        var nav2 = document.getElementById("2")
+        var nav3 = document.getElementById("3")
+        var nav4 = document.getElementById("4")
+        nav4.style.color = 'unset'
+        nav2.style.color = "unset"
+        nav3.style.color = "orange"
         return (
             <div className="job-container" id="jobs">
                 <div className="container jobs-section" style={{animationPlayState:'running'}}>

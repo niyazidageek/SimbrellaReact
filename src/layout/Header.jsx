@@ -3,26 +3,33 @@ import './Header.css'
 import { Link } from 'react-scroll';
 import SectionCard from './SectionCard';
 
+var temp = 0;
+
 const data = [
     {
         title:'What we do',
-        id:'whatwedo'
+        id:'whatwedo',
+        unique:'1'
     },
     {
         title:'Who we are',
-        id:'whoweare'
+        id:'whoweare',
+        unique:'2'
     },
     {
         title:'Jobs',
-        id:'jobs'
+        id:'jobs',
+        unique:'3'
     },
     {
         title:'News',
-        id:'news'
+        id:'news',
+        unique:'4'
     },
     {
         title:'Contacts',
-        id:'contacts'
+        id:'contacts',
+        unique:'5'
     }
 ]
 
@@ -46,9 +53,10 @@ const NavList = ({fontcolor}) => {
         <ul className="d-flex m-0 p-0" style={{listStyle:'none'}}>
             {
                 data.map((element, index)=>{
+                    temp+=1
                     return(
                         <li key = {index} style={{margin:'1rem', padding:'0px'}}>
-                            <Link style={{color:`${fontcolor}`}} className="Link" to={element.id}>{element.title}</Link>
+                            <Link style={{color:`${fontcolor}`}} id={element.unique} className="Link" to={element.id}>{element.title}</Link>
                         </li>
                     )
                  })
