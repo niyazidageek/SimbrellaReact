@@ -15,7 +15,7 @@ const Footer = () => {
             setY(prev => prev = window.scrollY)
             })
     },[])
-    if(y>=5950){
+    if(y>=6200){
         var nav4 =document.getElementById("4")
         var nav5 = document.getElementById("5")
         nav4.style.color = "unset"

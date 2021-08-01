@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter, Route, Switch, Router} from "react-router-dom";
 import Header from "./layout/Header";
 import SectionCard from "./layout/SectionCard";
 import CitySection from "./layout/CitySection";
@@ -13,7 +12,7 @@ import Footer from "./layout/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
     <Header/>
     <SectionCard />
     <CitySection />
@@ -24,11 +23,9 @@ function App() {
     <JobsSection />
     <NewsSection />
     <Footer />
-      <Switch>
-        
-      </Switch>
+    </>
     
-      </BrowserRouter>
+
   );
 }
 
