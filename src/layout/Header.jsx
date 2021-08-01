@@ -58,8 +58,6 @@ const NavList = ({fontcolor}) => {
 }
 
 const NavHeader = ({height, bgcolor, logo, fontcolor}) => {
-    console.log(height)
-    console.log(bgcolor)
     return(
             <div className="d-flex justify-content-between align-items-center" style={{height:`${height}`, backgroundColor:`${bgcolor}`, position:'fixed', transition:'150ms all linear', width:'100%', zIndex:'2'}}>
                 <div className="container d-flex justify-content-between align-items-center" >
@@ -75,9 +73,11 @@ const NavHeader = ({height, bgcolor, logo, fontcolor}) => {
 
 const Container = () => {
     const [y, setY] = useState(0)
-    window.addEventListener('scroll', ()=>{
-      setY(prev=>prev = window.scrollY)
-    })
+    useEffect(()=>{
+        window.addEventListener('scroll', ()=>{
+            setY(prev=>prev = window.scrollY)
+          })
+    },[])
     
     if(y>0){
         return(

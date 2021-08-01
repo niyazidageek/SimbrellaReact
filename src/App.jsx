@@ -9,6 +9,7 @@ import ClientsSection from "./layout/ClientsSection";
 import ExecutiveSection from "./layout/ExecutiveSection";
 import JobsSection from "./layout/JobsSection";
 import NewsSection from "./layout/NewsSection";
+import Footer from "./layout/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
     <ExecutiveSection />
     <JobsSection />
     <NewsSection />
+    <Footer />
       <Switch>
         
       </Switch>

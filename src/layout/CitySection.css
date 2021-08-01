@@ -39,6 +39,7 @@
 }
 .citysection{
     background-image: url(https://www.simbrella.com/site/assets/files/1049/solutions_bg-1.jpg);
+    background-attachment: fixed;
     animation: city 1s linear;
     animation-play-state: paused;
 }

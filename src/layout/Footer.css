@@ -1,0 +1,70 @@
+.footer .footer-container{
+    height: 100vh;
+}
+.footer{
+    background-color: black;
+    background-image: url(https://www.simbrella.com/site/templates/img/footer_bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: left;
+}
+.footer .footer-container .row{
+    display: flex;
+    width: max-content;
+    justify-content: space-between;
+}
+/* .footer .footer-container .row h3{
+    color: white;
+} */
+.footer .footer-container .row h3{
+    margin-top: 1.5rem;
+    color: white;
+}
+.footer .footer-container .row ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer .footer-container .row ul li{
+    display: flex;
+    align-items: center;
+    color: rgb(182, 182, 182);
+    margin-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    transition: all 150ms linear;
+    font-weight: bold   ;
+}
+.footer .footer-container .row ul li:first-child{
+    border-right: 1px solid rgb(182, 182, 182);
+}
+.footer .footer-container .row ul li:nth-child(2){
+    border-right: 1px solid rgb(182, 182, 182);
+}
+.footer .footer-container .row ul li:hover{
+    color: orange;
+}
+.footer .footer-container .row{
+    padding: 0;
+    width: max-content;
+}
+.footer .footer-container .row header .btn{
+    background-color: transparent;
+    margin-top: 1.5rem;
+    display: inline-block;
+    border-radius: 8px;
+    border: 3px solid rgb(235, 233, 233) ;
+    color: white;
+}
+.footer .footer-container .row header .btn > span{
+    width: 9rem;
+}
+.footer .footer-container .row header .btn:hover{
+    border: 3px solid orange;
+}
+.footer .footer-container .row header .btn img{
+    transition: all 150ms linear;
+}
+.footer .footer-container .row header .btn:hover img{
+    transform: translatex(20%);
+}

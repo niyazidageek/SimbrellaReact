@@ -28,17 +28,12 @@ const data = [
 ]
 
 const NewsSection = () => {
-    const [isReturned, setIsReturned] = useState(false)
     const [y, setY] = useState(0);
-    window.addEventListener('scroll', () => {
-    setY(prev => prev = window.scrollY)
-    })
     useEffect(()=>{
-        if(y>4380){
-            
-            setIsReturned(prev=>prev=true)
-        }
-    })
+        window.addEventListener('scroll', () => {
+            setY(prev => prev = window.scrollY)
+            })
+    },[])
     if(y>=5340){
         return (
             <div id="news" className="news-section container pt-5 pb-5" style={{animationPlayState:'running'}}>
@@ -69,36 +64,7 @@ const NewsSection = () => {
             </div>
         );
     }
-    else if(isReturned==true){
-        return (
-            <div id="news"className="news-section container pt-5 pb-5" style={{animationPlayState:'paused'}}>
-                <div className="row w-100 justify-content-between">
-                    <div className="col-3">
-                    <h2>Latest news</h2>
-                    </div>
-                    <div className="col-3 d-flex justify-content-end">
-                    <Button content="All news" />
-                    </div> 
-                </div>
-                <div className="row w-100 m-0 mt-5">
-                {
-                    data.map((element, index)=>{
-                        const {img, text, date} = element
-                        return(
-                            <div className="col-3 cards" key={index}>
-                                <div className="image-container">
-                                <img src={img} alt="" />
-                                </div>
-                                <h3>{text}</h3>
-                                <span>{date}</span>
-                            </div>
-                        )
-                    })
-                }
-                </div>
-            </div>
-        );
-    }
+    
     else{
         return (
             <div id="news" className="news-section container pt-5 pb-5" style={{visibility:'hidden'}}>

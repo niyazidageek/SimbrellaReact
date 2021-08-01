@@ -44,17 +44,12 @@ const row3=[
 ]
 
 const ClientsSection = () => {
-    const [isReturned, setIsReturned] = useState(false)
     const [y, setY] = useState(0);
+    useEffect(()=>{
     window.addEventListener('scroll', () => {
     setY(prev => prev = window.scrollY)
     })
-    useEffect(()=>{
-        if(y>2310){
-            
-            setIsReturned(prev=>prev=true)
-        }
-    })
+    },[])
     if(y>=2310){
         return (
             <div className="clients-bg">    
@@ -113,64 +108,64 @@ const ClientsSection = () => {
             </div>
         );
     }
-    else if(isReturned==true){
-        return (
-            <div className="clients-bg">    
-            <div className="container client-section pt-5 pb-5" style={{animationPlayState:'paused'}}>
-                <h2>Our clients</h2>
-                <div className="row mb-5">
-                    {
-                        row1.map((element, index)=>{
-                            return(
-                                <div className="col-3"  key={index}>
-                                    <div className="box">
-                                    <img src={element.img} alt=""></img>
-                                </div>
-                                </div>
+    // else if(isReturned==true){
+    //     return (
+    //         <div className="clients-bg">    
+    //         <div className="container client-section pt-5 pb-5" style={{animationPlayState:'paused'}}>
+    //             <h2>Our clients</h2>
+    //             <div className="row mb-5">
+    //                 {
+    //                     row1.map((element, index)=>{
+    //                         return(
+    //                             <div className="col-3"  key={index}>
+    //                                 <div className="box">
+    //                                 <img src={element.img} alt=""></img>
+    //                             </div>
+    //                             </div>
                                 
-                            )
-                        })
-                    }
-                </div>
+    //                         )
+    //                     })
+    //                 }
+    //             </div>
     
-                <div className="row mb-5">
-                {
-                        row2.map((element, index)=>{
-                            return(
-                                <div className="col-3"  key={index}>
-                                    <div className="box">
-                                    <img src={element.img} alt=""></img>
-                                </div>
-                                </div>
+    //             <div className="row mb-5">
+    //             {
+    //                     row2.map((element, index)=>{
+    //                         return(
+    //                             <div className="col-3"  key={index}>
+    //                                 <div className="box">
+    //                                 <img src={element.img} alt=""></img>
+    //                             </div>
+    //                             </div>
                                 
-                            )
-                        })
-                    }
-                </div>
+    //                         )
+    //                     })
+    //                 }
+    //             </div>
     
-                <div className="row">
-                {
-                        row3.map((element, index)=>{
-                            return(
-                                <div className="col-3"  key={index}>
-                                    <div className="box">
-                                    <img src={element.img} alt=""></img>
-                                </div>
-                                </div>
+    //             <div className="row">
+    //             {
+    //                     row3.map((element, index)=>{
+    //                         return(
+    //                             <div className="col-3"  key={index}>
+    //                                 <div className="box">
+    //                                 <img src={element.img} alt=""></img>
+    //                             </div>
+    //                             </div>
                                 
-                            )
-                        })
-                    }
-                    <div className="col-3">
-                        <div className="box">
-                            <span>& over 15 more clients</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        );
-    }
+    //                         )
+    //                     })
+    //                 }
+    //                 <div className="col-3">
+    //                     <div className="box">
+    //                         <span>& over 15 more clients</span>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //         </div>
+    //     );
+    // }
     else{
         return (
             <div className="clients-bg">    

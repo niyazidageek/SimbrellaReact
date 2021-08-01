@@ -1,12 +1,14 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './NumberSection.css'
 import CountUp from 'react-countup'
 
 const NumberSection = () => {
     const [y, setY] = useState(0);
-    window.addEventListener('scroll', () => {
-    setY(prev => prev = window.scrollY)
-    })
+    useEffect(()=>{
+        window.addEventListener('scroll', () => {
+            setY(prev => prev = window.scrollY)
+            })
+    },[])
     if(y>=1000){
         return (
             <div className="container numbers pt-5 pb-5" id="whoweare"  style={{animationPlayState:'running'}}>

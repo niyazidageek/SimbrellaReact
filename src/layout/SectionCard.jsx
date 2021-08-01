@@ -52,17 +52,12 @@ const Cards = () => {
 }
 
 const SectionCard = () => {
-    const [isReturned, setIsReturned] = useState(false)
     const [y, setY] = useState(0);
-    window.addEventListener('scroll', () => {
-    setY(prev => prev = window.scrollY)
-    })
     useEffect(()=>{
-        if(y>110){
-            
-            setIsReturned(prev=>prev=true)
-        }
-    })
+        window.addEventListener('scroll', () => {
+            setY(prev => prev = window.scrollY)
+            })
+    },[])
     if (y >= 110) {
         
         return (
@@ -75,17 +70,7 @@ const SectionCard = () => {
             </div>
         );
     }
-    else if(isReturned==true){
-        return (
-            <div className='container card-container' id="whatwedo" style={{ animationPlayState: 'paused' }}>
-                <header>
-                    <h2>What we do</h2>
-                    <Button content='Read more'/>
-                </header>
-                <Cards />
-            </div>
-        );
-    }
+    
     else{
         return <div className='container card-container' id="whatwedo" style={{ visibility: 'hidden' }}>
         <header>
